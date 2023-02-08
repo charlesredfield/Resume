@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"> 
+<meta https-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Signup</title>
+  <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script> 
+ <script defer src="./SwupHeadPlugin.js"></script>
+  <script defer src="./js/animation.js"></script>
+   <link href="animations.css" rel="stylesheet">
+</head>
+<body>
+    <main id="swup" class="transition-swipe">
+        <style> body {
+      font-family: Trebuchet MS, sans-serif;
+      background-color: whitesmoke;
+      margin: 0;
+      padding: 0;
+      overflow:hidden;
+    }
+    .container {
+      max-width: 400px;
+      margin: auto;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      padding: 20px;
+      animation: nav-load 250ms ease-in;
+    }
+    h1 {
+      margin: 20px 0;
+      font-size: 1.5em;
+      color: #0A4ABF;
+      text-align: center;
+       animation-name: nav-link-load;
+      animation-timing-function: ease-in-out;
+      animation-duration: 200ms;
+      animation-delay: 250ms;
+      animation-fill-mode: forwards;
+      transform: scale(0);
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      font-size: 1em;
+       animation-name: nav-link-load;
+      animation-timing-function: ease-in-out;
+      animation-duration: 200ms;
+      animation-delay: 250ms;
+      animation-fill-mode: forwards;
+      transform: scale(0);
+    }
+    input[type="submit"] {
+    text-align: center;
+      background-color: #0A4ABF;
+      color: #FFED31;
+      padding: 12px 20px;
+      margin-top: 10px;
+      margin-bottom: 0px;
+      border: 2px solid lightblue;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background-color 150ms ease-in-out;
+       animation-name: nav-link-load;
+      animation-timing-function: ease-in;
+      animation-duration: 200ms;
+      animation-delay: 250ms;
+      animation-fill-mode: forwards;
+      transform: scale(0);
+    }
+    input[type="submit"]:hover,
+    input[type="submit"]:focus {
+        background-color: lightblue;
+    }
+  #signup {
+        margin-left: 0px;
+        float:left;
+        animation-name: nav-link-load;
+      animation-timing-function: ease-in-out;
+      animation-duration: 200ms;
+      animation-delay: 250ms;
+      animation-fill-mode: forwards;
+       transition:  150ms color ease-in;
+      color: steelblue;
+    }
+    #signup:hover,
+    #signup:focus{
+        color: lightblue;
+    }
+    @keyframes nav-load {
+      0% {
+          transform: translateY(-100%);
+      }
+      100% {
+          transform: translateY(0);
+      }
+  }
+   @keyframes nav-link-load {
+      0% {
+          transform: scale(0);
+      }
+      100% {
+          transform: scale(1);
+      }
+  }
+    @media (max-width: 1600px) {
+  /* Styles for devices with a width of 1600px or smaller */
+  .container {
+    width: 90%;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    font-size: 1.2em;
+  }
+  input[type="submit"] {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 1440px) {
+  /* Styles for devices with a width of 1440px or smaller */
+  .container {
+    width: 95%;
+  }
+  h1 {
+    font-size: 1.8em;
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    font-size: 1.1em;
+  }
+  input[type="submit"] {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 1280px) {
+  /* Styles for devices with a width of 1280px or smaller */
+  .container {
+    width: 95%;
+  }
+  h1 {
+    font-size: 1.6em;
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    font-size: 1em;
+  }
+  input[type="submit"] {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* Styles for devices with a width of 1024px or smaller */
+ .container {
+    width: 80%;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="email"]{
+    font-size: 20px;
+  }
+  input[type="submit"] {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  /* Styles for devices with a width of 800px or smaller */
+  .container {
+    width: 80%;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="email"]{
+    font-size: 20px;
+  }
+  input[type="submit"] {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 700px) {
+  /* Styles for devices with a width of 700px or smaller */
+.container {
+    width: 80%;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="email"]{
+    font-size: 20px;
+  }
+  input[type="submit"] {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 600px) {
+  /* Styles for devices with a width of 600px or smaller */
+  .container {
+    width: 80%;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="email"]{
+    font-size: 20px;
+  }
+  input[type="submit"] {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  /* Styles for devices with a width of 500px or smaller */
+  .container {
+    width: 80%;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="email"]{
+    font-size: 20px;
+  }
+  input[type="submit"] {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 400px) {
+  /* Styles for devices with a width of 400px or smaller */
+  .container {
+    width: 80%;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="email"]{
+    font-size: 20px;
+  }
+  input[type="submit"] {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 300px) {
+  /* Styles for devices with a width of 300px or smaller */
+  .container {
+    width: 80%;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="email"]{
+    font-size: 20px;
+  }
+  input[type="submit"] {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+}</style>
+  <div class="container">
+        <a id="signup" href="/index.html" style="text-decoration: none;font-weight: bold; color: #0A4ABF">Back</a>
+    <h1>Signup</h1>
+    <form action="/register.php" method="post" autocomplete="off">
+      <label for="username">
+        <i class="fas fa-user"></i>
+      </label>
+      <input type="text" name="username" placeholder="Username" id="username" required>
+      <label for="password">
+        <i class="fas fa-lock"></i>
+      </label>
+      <input type="password" name="password" placeholder="Password" id="password" required>
+      <label for="email">
+        <i class="fas fa-envelope"></i>
+      </label>
+      <input type="email" name="email" placeholder="Email" id="email" required>
+      <center><input type="submit" value="Register"></center><br><br>
+    </form> 
+  </div>
+  </main>
+</body>
+</html>

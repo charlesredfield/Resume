@@ -1,0 +1,25 @@
+.transition-swipe {
+    opacity:1;
+        transform: translateY(0%);
+        transition: 250ms ease-in;
+    }
+    html.is-animating .transition-swipe {
+        transform: translateY(-100%);
+    }
+    
+    .transition-slide {
+        opacity:1;
+        transform: translateX(0%);
+        transition: 300ms ease-out;
+    }
+    html.is-animating .transition-slide {
+        transform: translateX(-150%);
+    }
+    
+    .transition-grow {
+        transform: scale(1);
+        transition: 250ms ease-in;
+    }
+    html.is-animating .transition-grow{
+        transform: scale(0);
+    }

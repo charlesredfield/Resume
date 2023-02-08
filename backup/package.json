@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@react-spring/parallax": "^9.6.1"
+  }
+}
+{
+  "dependencies": {
+    "three.js": "^0.77.0"
+  }
+}
